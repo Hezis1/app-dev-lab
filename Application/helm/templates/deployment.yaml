@@ -30,8 +30,6 @@ spec:
             
           livenessProbe:
             {{- tpl (toYaml .Values.Probes.liveness) . | nindent 12 }}
-            httpGet:
-              port: {{ .Values.containers.containerPort }}
               
           volumeMounts:
             {{- tpl (toYaml .Values.volume.mountPath) . | nindent 12 }}
