@@ -34,7 +34,7 @@ volume:
   mount:
     path: /tmp/html
 
-test: Null
+test: Healthy
 
 github:
   user: tal-hason
