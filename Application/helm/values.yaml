@@ -37,7 +37,7 @@ volume:
 test: Healthy
 
 github:
-  user: hezis1
+  user: Hezis1
   token: empty-pass
   url: 'https://github.com/Hezis1/app-dev-lab/tree/main'
 
