@@ -23,7 +23,7 @@ probes:
     httpGet:
       scheme: HTTP
       port: 8080     
-    path: /health/liveliness
+      path: /health/liveliness
     initialDelaySeconds: 1
     timeoutSeconds: 1
     periodSeconds: 10
