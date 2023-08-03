@@ -39,6 +39,6 @@ test: Healthy1
 github:
   user: Hezis1
   token: empty-pass
-  url: 'https://github.com/Hezis1/app-dev-lab/tree/main'
+  url: 'https://api.github.com/repos/Hezis1/app-dev-lab/issues'
 
 
