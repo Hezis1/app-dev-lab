@@ -34,7 +34,7 @@ volume:
   mount:
     path: /tmp/html
 
-test: Healthy1
+test: Healthy
 
 github:
   user: Hezis1
