@@ -11,7 +11,9 @@ service:
 probes:
   readiness:
       path: /health/readiness
-      scheme: HTTP
+      httpGet:
+        scheme: HTTP
+        port: 8080 #{{ .Values.containers.containerPort  }} # In which port the Application is listening
     initialDelaySeconds: 1 # the time is waiting befor testing the application path
     timeoutSeconds: 1
     periodSeconds: 10
