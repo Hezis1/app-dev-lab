@@ -11,5 +11,4 @@ spec:
   selector:
 # set your user name
     app: {{ .Release.Name }}
-    app: {{ .Release.Name }}-1
-    app: {{ .Release.Name }}-2
+    
