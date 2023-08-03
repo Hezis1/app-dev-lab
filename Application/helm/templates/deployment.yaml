@@ -30,6 +30,7 @@ spec:
             
           livenessProbe:
             {{- tpl (toYaml .Values.Probes.liveness) . | nindent 12 }}
+            
           volumeMounts:
             - mountPath: /tmp/html
               name: index-html
