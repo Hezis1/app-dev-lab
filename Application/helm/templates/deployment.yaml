@@ -30,10 +30,9 @@ spec:
             
           livenessProbe:
             {{- tpl (toYaml .Values.Probes.liveness) . | nindent 12 }}
-              
           volumeMounts:
-            {{- tpl (toYaml .Values.volume.mountPath) . | nindent 12 }}
-            - name: index-html
+            - mountPath: /tmp/html
+              name: index-html
 
           terminationMessagePath: /dev/termination-log
           name: {{ .Release.Name }}
