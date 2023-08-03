@@ -38,7 +38,7 @@ test: Healthy
 
 github:
   user: hezis1
-  token: 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
+  token: empty-pass
   url: https://github.com/Hezis1/app-dev-lab
 
 
